@@ -1,0 +1,44 @@
+import React from 'react';
+import './App.css';
+
+const Dashboard = () => {
+  return (
+    <div className="dashboard">
+      
+      <aside className="sidebar">
+        <h2>My Dashboard</h2>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Analytics</li>
+            <li>Reports</li>
+            <li>Settings</li>
+          </ul>
+        </nav>
+      </aside>
+      <main className="main-content">
+        <header className="dashboard-header">
+          <h1>Welcome to the Dashboard</h1>
+          <button className="logout-button">Logout</button>
+        </header>
+        <section className="content">
+          <div className="card">
+            <h3>Statistics</h3>
+            <p>Here is some data about your app's performance.</p>
+          </div>
+          <div className="card">
+            <h3>Tasks</h3>
+            <p>You have 5 pending tasks.</p>
+          </div>
+          <div className="card">
+            <h3>Messages</h3>
+            <p>You have 10 unread messages.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+};
+
+export default Dashboard;
+
